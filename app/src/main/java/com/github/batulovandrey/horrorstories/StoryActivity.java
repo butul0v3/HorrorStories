@@ -112,7 +112,7 @@ public class StoryActivity extends AppCompatActivity {
 
     private void initialize() {
         mControlsView = findViewById(R.id.fullscreen_content_controls);
-        mContentView = findViewById(R.id.fullscreen_content);
+        mContentView = findViewById(R.id.text_of_story);
 
         mTextViewStory = (TextView) findViewById(R.id.text_of_story);
         mAddToFavoriteButton = (Button) findViewById(R.id.add_to_favorite);
