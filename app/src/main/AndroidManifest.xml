@@ -21,6 +21,12 @@
         </activity>
         <activity android:name=".FavoriteStoriesActivity">
         </activity>
+        <activity
+            android:name=".StoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_story"
+            android:theme="@style/FullscreenTheme">
+        </activity>
     </application>
 
 </manifest>
