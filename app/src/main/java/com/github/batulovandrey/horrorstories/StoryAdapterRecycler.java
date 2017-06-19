@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
 /**
  * @author Batulov Andrey on 19.06.17.
  */
@@ -14,6 +16,7 @@ import android.widget.TextView;
 public class StoryAdapterRecycler extends RecyclerView.Adapter<StoryAdapterRecycler.NumberViewHolder> {
     private final ListItemClickListener mOnClickListener;
     private int mNumberItems;
+    private List<Story> storiesAdapter;
 
     public StoryAdapterRecycler(int numberItems, ListItemClickListener onClickListener) {
         mNumberItems = numberItems;
@@ -33,6 +36,10 @@ public class StoryAdapterRecycler extends RecyclerView.Adapter<StoryAdapterRecyc
     @Override
     public int getItemCount() {
         return mNumberItems;
+    }
+
+    public void setStoriesList(List<Story> stories) {
+        storiesAdapter = stories;
     }
 
     class NumberViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
